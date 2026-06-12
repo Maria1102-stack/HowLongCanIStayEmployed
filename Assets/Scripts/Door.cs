@@ -7,20 +7,28 @@ public class Door : MonoBehaviour
 
     private bool isOpen = false;
 
-    public void onMouseDown()
+    void Start()
+    {
+        Debug.Log("Door script started");
+    }
+
+    public void OnMouseDown()
     {
         ToggleDoor();
+        Debug.Log("Door clicked!");
     }
 
     public void ToggleDoor()
     {
         if(isOpen)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            Debug.Log("The door has been closed");
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, openAngle, 0);
+            transform.localRotation = Quaternion.Euler(0, openAngle, 0);
+            Debug.Log("The door has been opened");
         }
 
         isOpen = !isOpen;
