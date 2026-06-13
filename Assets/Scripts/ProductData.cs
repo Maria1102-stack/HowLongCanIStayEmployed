@@ -8,22 +8,22 @@ public class ProductData : ScriptableObject
    [SerializeField] private GameObject prefab;
    [SerializeField] private float price;
 
-   public string productName
+   public string ProductName
    {
         get { return productName; }
    }
 
-   public ProductCategory productCategory
+   public ProductCategory ProductCategory
    {
         get { return productCategory; }
    }
    
-   public GameObject prefab
+   public GameObject Prefab
    {
         get { return prefab; }
    }
 
-   public float price
+   public float Price
    {
         get { return price; }
    }

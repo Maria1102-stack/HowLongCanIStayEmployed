@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4594056016084249}
   - component: {fileID: 2216628201200781877}
   m_Layer: 0
-  m_Name: MonVikingBerry
+  m_Name: VikingBerry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
