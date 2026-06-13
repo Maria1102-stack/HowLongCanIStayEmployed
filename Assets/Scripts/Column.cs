@@ -24,7 +24,7 @@ public class Column : MonoBehaviour
                 Instantiate(
                     acceptedProduct.Prefab,
                     slot.position,
-                    slot.rotation,
+                    slot.rotation * Quaternion.Euler(0, 90, 0),
                     slot
                 );
             }
