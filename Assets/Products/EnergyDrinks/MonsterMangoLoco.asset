@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2366f644619ed041aafcf47132567f4, type: 3}
-  m_Name: New Product Data
+  m_Name: MonsterMangoLoco
   m_EditorClassIdentifier: Assembly-CSharp::ProductData
-  productName: 
-  productCategory: 0
-  prefab: {fileID: 0}
-  price: 0
+  productName: MonsterMangoLoco
+  productCategory: 1
+  prefab: {fileID: 8039160563908362411, guid: 2fd84dc154eff58429b203415de40dd3, type: 3}
+  price: 25
