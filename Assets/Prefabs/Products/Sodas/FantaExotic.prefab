@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9056049203000221014}
   - component: {fileID: 2170118255731920107}
   - component: {fileID: 6388253460121069507}
+  - component: {fileID: -2153196103707527688}
   m_Layer: 0
   m_Name: FantaExotic
   m_TagString: Untagged
@@ -114,3 +115,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-2153196103707527688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083332160675007045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5976ddc6c3b576a4d9b38f7f32c60036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Product
+  data: {fileID: 11400000, guid: 2525c409eb75cd147807f2bc8672deae, type: 2}

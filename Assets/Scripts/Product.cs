@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Product
+public class Product : MonoBehaviour
 {
     [SerializeField] private ProductData data;
 
