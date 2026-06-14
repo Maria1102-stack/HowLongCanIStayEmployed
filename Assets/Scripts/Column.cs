@@ -19,14 +19,21 @@ public class Column : MonoBehaviour
     {
         foreach (Transform slot in slots)
         {
-            if(slot.childCount == 0)
+            if (slot.childCount == 0)
             {
-                Instantiate(
-                    acceptedProduct.Prefab,
+                Debug.Log($"Spawner: {acceptedProduct.ProductName}");
+                Debug.Log($"Prefab: {acceptedProduct.Prefab.name}");
+                Debug.Log($"Prefab rotation: {acceptedProduct.Prefab.transform.rotation.eulerAngles}");
+                Debug.Log($"Slot rotation: {slot.rotation.eulerAngles}");
+
+                GameObject product = Instantiate(
+                     acceptedProduct.Prefab,
                     slot.position,
-                    slot.rotation * Quaternion.Euler(0, 90, 0),
+                    acceptedProduct.Prefab.transform.rotation,
                     slot
                 );
+
+                Debug.Log($"Spawned rotation: {product.transform.rotation.eulerAngles}");
             }
         }
     }
@@ -34,5 +41,6 @@ public class Column : MonoBehaviour
     private void Start()
     {
         Fill();
+           
     }
 }
