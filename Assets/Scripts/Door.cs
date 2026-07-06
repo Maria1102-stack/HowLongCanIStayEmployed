@@ -1,14 +1,18 @@
+using Microsoft.VisualBasic;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField]
-    private float openAngle = 90f;
+    [SerializeField] private float openAngle = 90f;
 
     private bool isOpen = false;
+    private Quaternion closedRotation;
+    private Quaternion openRotation;
 
     void Start()
     {
+        closedRotation = transform.localRotation;
+        openRotation = closedRotation * Quaternion.Euler(0, openAngle, 0);
         Debug.Log("Door script started");
     }
 
@@ -22,12 +26,12 @@ public class Door : MonoBehaviour
     {
         if(isOpen)
         {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            transform.localRotation = closedRotation;
             Debug.Log("The door has been closed");
         }
         else
         {
-            transform.localRotation = Quaternion.Euler(0, openAngle, 0);
+            transform.localRotation = openRotation;
             Debug.Log("The door has been opened");
         }
 
