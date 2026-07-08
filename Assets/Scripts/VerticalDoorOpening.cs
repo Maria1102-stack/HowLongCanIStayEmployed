@@ -1,7 +1,6 @@
-using Microsoft.VisualBasic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class VerticalDoorOpening : MonoBehaviour
 {
     [SerializeField] private float openAngle = 90f;
 
@@ -12,7 +11,7 @@ public class Door : MonoBehaviour
     void Start()
     {
         closedRotation = transform.localRotation;
-        openRotation = closedRotation * Quaternion.Euler(0, openAngle, 0);
+        openRotation = closedRotation * Quaternion.Euler(openAngle, 0, 0);
         Debug.Log("Door script started");
     }
 
